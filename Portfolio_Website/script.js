@@ -22,3 +22,21 @@ function displayIntroText() {
 window.addEventListener('load', function () {
     displayIntroText();
 });
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+//                                                  END OF JAVASCRIPT FOR INDEX
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+function showProjectDetails(projectNumber) {
+    // Add logic to show detailed project view for the selected project
+    // You can use AJAX, fetch, or other methods to load project details dynamically
+    // For simplicity, let's just toggle the overlay for demonstration purposes
+    document.getElementById('project-details-overlay').style.display = 'flex';
+}
+
+function hideProjectDetails() {
+    // Add logic to hide detailed project view
+    document.getElementById('project-details-overlay').style.display = 'none';
+}
+

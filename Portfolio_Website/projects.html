@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header-links">
+            <a href="index.html">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <div id="project-cards-container">
+        <!-- Project Card 1 -->
+        <div class="project-card" onclick="showProjectDetails(1)">
+            <div class="project-image" style="background-image: url('images/project1.jpg');">
+                <div class="overlay">
+                    <h2>Gordon Events Hub</h2>
+                </div>
+            </div>
+            <div class="project-info">
+                <p>Brief introduction to Project 1.</p>
+                <div class="see-more">See More</div>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <a href="https://github.com/gordon-cs/appbuilder-pwa" class="project-card-link" target="_blank">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('images/project2.jpg');">
+                    <div class="overlay">
+                        <h2>SIL Scripture AppBuilder</h2>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p>Brief introduction to Project 2.</p>
+                    <div class="see-more">See More</div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project Card 3 -->
+        <a href="external_link_project2.html" class="project-card-link">
+            <div class="project-card" onclick="showProjectDetails(2)">
+                <div class="project-image" style="background-image: url('project2.jpg');">
+                    <div class="overlay">
+                        <h2>Project Name 2</h2>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p>Brief introduction to Project 2.</p>
+                    <div class="see-more">See More</div>
+                </div>
+            </div>
+        </a>
+        <!-- Add more project cards as needed -->
+
+    </div>
+
+    <!-- Detailed Project View -->
+    <div id="project-details-overlay" onclick="hideProjectDetails()">
+        <!-- Content for detailed project view goes here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
